@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    padding: 1em;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-image: url("./imgs/back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Madimi One", sans-serif;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    height: auto;
+}
+.card{
+    border-radius: 10px;
+    background-color: #9ca1a5cb;
+    border: 2px solid #c8d2dbcb;
+    padding: 2rem;
+    width: 220px;
+    max-width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h3{
+    border-bottom: 4px solid #ffff;
+    width: 90%;
+    text-align: center;
+}
+.image-style{
+    border-radius: 100%;
+    filter: grayscale(1);
+    transition: all 200ms ease-in;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.image-style:hover{
+    border-radius: 10px;
+    cursor: crosshair;
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: all 200ms ease-in;
+
+}
+input{
+    margin-bottom: 6vh;
+    padding: 5px;
+    border-radius: 900px;
+}
+label{
+    border-radius: 500px;
+    background-color:rgb(206, 120, 7);
+    border: 3px solid #04ff19cb;
+    color: #ffff;
+    padding: 6px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+}
+.btn{
+    border-radius: 500px;
+    background-color:rgb(206, 120, 7);
+    border: 3px solid #2adf19cb;
+    color: #ffff;
+    padding: 6px;
+    color:black;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

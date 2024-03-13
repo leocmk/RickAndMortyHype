@@ -8,91 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2vh;
-            padding: 1em;
-            width: 100vw;
-            height: auto;
-            overflow-x: hidden;
-            background-image: url("./imgs/back.jpg");
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
-            font-family: "Madimi One", sans-serif;
-        }
-        #container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2vw;
-            height: auto;
-        }
-        .card{
-            border-radius: 10px;
-            background-color: #9ca1a5cb;
-            border: 2px solid #c8d2dbcb;
-            padding: 2rem;
-            width: 220px;
-            max-width: 220px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 2vh;
-            align-items: center;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        h3{
-            border-bottom: 4px solid #ffff;
-            width: 90%;
-            text-align: center;
-        }
-        .image-style{
-            border-radius: 100%;
-            filter: grayscale(1);
-            transition: all 200ms ease-in;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-
-        .image-style:hover{
-            border-radius: 10px;
-            cursor: crosshair;
-            filter: grayscale(0);
-            transform: scale(1.1);
-            transition: all 200ms ease-in;
-
-        }
-        input{
-            margin-bottom: 6vh;
-            padding: 5px;
-        }
-        label{
-            background-color: #090909cb;
-            color: #ffff;
-            padding: 4px;
-        }
-    </style>
+    <link href="stlyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <img  src="./imgs/Rick-And-Morty-Logo.png" alt="Logo" width="500px" height="auto">
     <div>
         <label for="pageInput">Digite a página(1/42)</label>
         <input type="text" id="pageInput">
-        <button onclick="fetchCharacters()">Mostrar</button>
+        <button class="btn" onclick="fetchCharacters()">Mostrar</button>
     </div>
     <div>
         <label for="nameInput">Buscar por nome</label>
-        <input type="text" id="nameInput">
-        <button onclick="searchByName()">Buscar</button>
+        <input placeholder="Morty" type="text" id="nameInput">
+        <button class="btn" onclick="searchByName()">Buscar</button>
     </div>
     <div id="container"></div>
    <script>
